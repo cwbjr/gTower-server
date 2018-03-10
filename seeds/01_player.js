@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           origin_id: 1,
           // class: 'Fighter',
           // race: 'Human',
-          image: ''
+          image: 'https://wiki.guildwars2.com/images/thumb/1/1a/Pit_Fighter_armor_human_male_front.jpg/193px-Pit_Fighter_armor_human_male_front.jpg'
         },
         {
           id: 2,
@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           origin_id: 8,
           // class: 'Wizard',
           // race: 'High Elf',
-          image:''
+          image:'http://moziru.com/images/drawn-elf-elf-wizard-14.jpg'
         },
         {
           id: 3,
@@ -34,7 +34,7 @@ exports.seed = function(knex, Promise) {
           origin_id: 4,
           // class: 'Barbarian',
           // race: 'Dwarf',
-          image:''
+          image:'https://s-media-cache-ak0.pinimg.com/originals/81/c8/2f/81c82fed7d1aed6e271788957723504c.jpg'
         }
       ]).then(() => {
       return knex.raw('ALTER SEQUENCE player_id_seq RESTART WITH 4;');
